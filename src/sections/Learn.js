@@ -17,7 +17,7 @@ const Learn = () => {
                   type="image/png"
                   srcSet="./img/learn/learn-1/learn-1@w280.png 280w , ./img/learn/learn-1/learn-1@w379.png 379w, ./img/learn/learn-1/learn-1@w464.png 464w, ./img/learn/learn-1/learn-1@w532.png 532w, ./img/learn/learn-1/learn-1@w604.png 604w, ./img/learn/learn-1/learn-1@w670.png 670w, ./img/learn/learn-1/learn-1@w726.png 726w, ./img/learn/learn-1/learn-1@w775.png 775w, ./img/learn/learn-1/learn-1@w828.png 828w, ./img/learn/learn-1/learn-1@w864.png 864w"
                 />
-                <img
+                <img sizes="(max-width: 576px) 95vw, 39vw"
                   className="learn__cart-img"
                   src="./img/learn/learn-1/learn-1@w864.png"
                   alt="course"
@@ -53,7 +53,7 @@ const Learn = () => {
                   type="image/png"
                   srcSet="./img/learn/learn-2/learn-2@w280.png 280w, ./img/learn/learn-2/learn-2@w378.png 378w,./img/learn/learn-2/learn-2@w461.png 461w, ./img/learn/learn-2/learn-2@w534.png 534w, ./img/learn/learn-2/learn-2@w600.png 600w, ./img/learn/learn-2/learn-2@w663.png 663w, ./img/learn/learn-2/learn-2@w720.png 720w, ./img/learn/learn-2/learn-2@w769.png 769w, ./img/learn/learn-2/learn-2@w825.png 825w, ./img/learn/learn-2/learn-2@w864.png 864w"
                 />
-                <img className="learn__cart-img" src="./img/learn/learn-2/learn-2@w864.png" alt="course" />
+                <img sizes="(max-width: 576px) 95vw, 39vw" className="learn__cart-img" src="./img/learn/learn-2/learn-2@w864.png" alt="course" />
               </picture>
             </div>
             <article className="learn__cart-content">

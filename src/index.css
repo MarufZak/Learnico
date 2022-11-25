@@ -14,6 +14,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-green: rgba(34, 164, 90, 1);
+  --color-green-dark: #00353B;
   --color-blue: rgba(31, 41, 55, 1);
   --color-pink: rgba(252, 216, 202, 1);
   --color-gold: rgba(224, 180, 32, 1);
@@ -120,7 +121,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2.6rem,3.4vw,5.4rem);
+  font-size: clamp(2.6rem,3.6vw,5.4rem);
 }
 
 h3 {
@@ -631,3 +632,150 @@ button {
 
 
 
+
+
+/*=== COURSES ===*/
+
+
+
+.courses__carts {
+  --gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+  margin-bottom: 5rem;
+}
+
+.courses__cart-header {
+  z-index: 1;
+}
+
+.courses__cart {
+  flex: 1 0 calc(100% / 3 - var(--gap));
+  position: relative;
+  background: var(--color-green-dark);
+  min-height: 50rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.courses__cart-title {
+  margin: 1.5rem 0;
+}
+
+.courses__cart-price {
+  color: var(--color-white);
+}
+
+.courses__cart-img {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* z-index: -1; */
+}
+
+.courses__cart-btn {
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 998px) {
+  .courses__carts {
+    flex-wrap: wrap;
+  } 
+
+  .courses__cart {
+    flex: 1 0 45%;
+    min-height: 10rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .courses__cart-title {
+    text-shadow: 2px 3px 5px #000;
+  }
+}
+
+
+
+
+
+
+
+/*=== STUDENTS ===*/
+
+.students__body {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 2.4rem;
+  border-bottom-left-radius: 2.4rem;
+  background: var(--color-pink);
+}
+
+.students__content {
+  padding-left: 6rem;
+  padding-right: 2rem;
+  width: 50%;
+}
+
+.students__title {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.students__btn {
+  margin-top: 4rem;
+}
+
+.students__img-block {
+  height: 100%;
+  position: relative;
+  height: 54rem;
+  width: 50%;
+}
+
+.students__img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 676px) {
+  .students__body {
+    border-radius: 0;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .students__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 10%;
+  }
+
+  .students__img-block {
+    width: 100%;
+    height: 30vh;
+    object-position: center;
+  }
+
+  .students__title {
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .students__btn {
+    margin-top: 2rem;
+  }
+  
+}
