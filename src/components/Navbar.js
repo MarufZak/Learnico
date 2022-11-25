@@ -1,6 +1,7 @@
 import Container from "./Container";
 import { useRef, useState } from "react";
 import Icon from "./Icon";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
@@ -47,15 +48,9 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="nav__buttons list">
-              <button className="nav__btn btn btn--transparent btn--icon">
-                <Icon icon="search" />
-                Search
-              </button>
-              <button className="nav__btn btn btn--transparent btn--icon">
-                <Icon icon="cart" />
-                Cart
-              </button>
-              <button className="nav__btn btn btn--white">Sign Up</button>
+              <Button className="nav__btn" color="transparent" icon="search">Search</Button>
+              <Button className="nav__btn" color="transparent" icon="cart">Cart</Button>
+              <Button className="nav__btn" color="white">Sign Up</Button>
             </div>
           </div>
           <div onClick={handleClick} className="burger">

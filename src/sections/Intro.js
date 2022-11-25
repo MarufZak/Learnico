@@ -1,5 +1,5 @@
+import Button from "../components/Button";
 import Container from "../components/Container";
-import Icon from "../components/Icon";
 
 const Intro = () => {
   return (
@@ -15,15 +15,12 @@ const Intro = () => {
               Vestibulum vel molestie magna curabitur tincidunt nunc sit amet.
             </p>
             <div className="intro__buttons list">
-              <button className="btn btn--green intro__btn">
+              <Button color="green" className="intro__btn">
                 Explore Courses
-              </button>
-              <button className="btn btn--transparent btn--icon intro__btn">
+              </Button>
+              <Button color="transparent" className="intro__btn" icon="play" iconClassName="intro__btn-icon">
                 Watch Video
-                <span className="intro__btn-icon">
-                  <Icon icon="play" />
-                </span>
-              </button>
+              </Button>
             </div>
             <div className="intro__reviews">
                 <img src="./img/intro-review.png" alt="" />
