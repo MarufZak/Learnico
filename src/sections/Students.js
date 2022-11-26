@@ -14,7 +14,11 @@ const Students = () => {
                 <Button className="students__btn" color="blue">Get started</Button>
             </div>
             <div className="students__img-block">
-              <img className="students__img" src="./img/students/students.jpg" alt="students" />
+              <picture>
+                <source type='image/webp' srcset="./img/students/students@w280.webp 280w, ./img/students/students@w482.webp 482w, ./img/students/students@w640.webp 640w" src="./img/students/students@w640.webp" sizes='(max-width: 676px) 90vw, 45vw' />
+                <source type='image/jpg' srcset="./img/students/students@w280.jpg 280w, ./img/students/students@w482.jpg 482w, ./img/students/students@w640.jpg 640w" src="./img/students/students@w640.jpg" sizes='(max-width: 676px) 90vw, 45vw' />
+                <img className="students__img" src="./img/students/students@w640.jpg" alt="students" />
+              </picture>
             </div>
         </div>
     </Container>

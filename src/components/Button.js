@@ -1,7 +1,7 @@
 import Icon from "./Icon";
 
 
-const Button = ({className,color,children,icon, iconClassName}) => {
+const Button = ({className,color,children,icon, iconClassName,role}) => {
   return <button className={`btn btn--${color} ${className} ${icon && 'btn--icon'}`}>
     {children}
     {icon && <Icon className={iconClassName} icon={icon} />}
