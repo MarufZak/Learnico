@@ -1,32 +1,24 @@
-import Carts from "./sections/Carts";
-import Courses from "./sections/Courses";
-import Features from "./sections/Features";
-import Feedback from "./sections/Feedback";
-import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import Intro from "./sections/Intro";
-import Learn from "./sections/Learn";
-import Platform from "./sections/Platform";
-import Posts from "./sections/Posts";
-import Start from "./sections/Start";
-import Students from './sections/Students';
-
+import {Carts,Courses,Features,Footer,Header,Intro,Learn,Platform,Posts,Start,Students,Feedback} from "./sections";
 
 function App() {
-  return <>
-    <Header />
-    <Intro />
-    <Platform />
-    <Learn />
-    <Courses />
-    <Students />
-    <Carts />
-    <Features />
-    {/* <Feedback /> */}
-    <Posts/>
-    <Start />
-    <Footer />
-  </>
+  return (
+    <>
+      <Header />
+      <main className="main">
+        <Intro />
+        <Platform />
+        <Learn />
+        <Courses />
+        <Students />
+        <Carts />
+        <Features />
+        <Feedback />
+        <Posts />
+        <Start />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default App;

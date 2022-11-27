@@ -1,13 +1,12 @@
-
-import Navbar from "../components/Navbar";
-import Advertisement from "../components//Advertisement";
-
+import {Navbar,Advertisement} from "../components";
 
 const Header = () => {
-  return <header className="header">
-    <Advertisement/>
-    <Navbar />
-  </header>
-}
+  return (
+    <header className="header">
+      <Advertisement />
+      <Navbar />
+    </header>
+  );
+};
 
 export default Header;

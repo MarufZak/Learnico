@@ -1,5 +1,4 @@
-import Button from "../components/Button";
-import Container from "../components/Container";
+import {Button,Container} from "../components";
 
 const Intro = () => {
   return (
@@ -18,25 +17,46 @@ const Intro = () => {
               <Button color="green" className="intro__btn">
                 Explore Courses
               </Button>
-              <Button color="transparent" className="intro__btn" icon="play" iconClassName="intro__btn-icon">
+              <Button
+                color="transparent"
+                className="intro__btn"
+                icon="play"
+                iconClassName="intro__btn-icon"
+              >
                 Watch Video
               </Button>
             </div>
             <div className="intro__reviews">
-                <img src="./img/intro-review.png" alt="" />
-                <div className="intro__reviews-content">
-                    <span className="intro__stars">★ ★ ★ ★ ★</span>
-                    <p className="intro__reviews-text">From 3k+ reviews</p>
-                </div>
+              <img src="./img/intro-review.png" alt="" />
+              <div className="intro__reviews-content">
+                <span className="intro__stars">★ ★ ★ ★ ★</span>
+                <p className="intro__reviews-text">From 3k+ reviews</p>
+              </div>
             </div>
           </div>
           <div className="intro__img-block">
             <picture>
-              <source type="image/webp" srcSet="./img/intro/intro@w280.webp 280w, ./img/intro/intro@w389.webp 389w, ./img/intro/intro@w470.webp 470w, ./img/intro/intro@w547.webp 547w, ./img/intro/intro@w600.webp 600w" sizes="(max-width: 768px) calc(100vw-3rem), 45vw" />
-              <source className="intro__img" type="image/png" srcSet="./img/intro/intro@w280.png 280w , ./img/intro/intro@w389.png 389w, ./img/intro/intro@w470.png 470w, ./img/intro/intro@w547.png 547w, ./img/intro/intro@w600.png 600w" />
-              <img className="intro__img" src="./img/intro/intro@w600.png" alt="" />
+              <source
+                type="image/webp"
+                srcSet="./img/intro/intro@w280.webp 280w, ./img/intro/intro@w389.webp 389w, ./img/intro/intro@w470.webp 470w, ./img/intro/intro@w547.webp 547w, ./img/intro/intro@w600.webp 600w"
+                sizes="(max-width: 768px) calc(100vw-3rem), 45vw"
+              />
+              <source
+                className="intro__img"
+                type="image/png"
+                srcSet="./img/intro/intro@w280.png 280w , ./img/intro/intro@w389.png 389w, ./img/intro/intro@w470.png 470w, ./img/intro/intro@w547.png 547w, ./img/intro/intro@w600.png 600w"
+              />
+              <img
+                className="intro__img"
+                src="./img/intro/intro@w600.png"
+                alt=""
+              />
             </picture>
-            <img className="intro__img-figure" src="./img/intro/intro-figure.png" alt="figure" />
+            <img
+              className="intro__img-figure"
+              src="./img/intro/intro-figure.png"
+              alt="figure"
+            />
           </div>
         </div>
       </Container>
